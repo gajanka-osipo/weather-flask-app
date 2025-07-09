@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block nav_content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div>
+        <form method="POST">
+            {{ form.csrf_token() }}
+
+            <p>{{ form.search }}</p>
+            <p style='position: absolute; left: 450px; top: -1px'>{{ form.submit }}</p>
+
+        </form>
+        <a class="btn btn-warning" style='position: absolute; left: 1000px; top: -5px' href="{{ url_for('what_city') }}">I live in different city!</a>
+        <a class="btn btn-danger" style='position: absolute; left: 1250px; top: -5px' href="{{ url_for('delete_cookie') }}">Clear cookies</a>
+    </div>
+</nav>
+{% endblock %}
+
+{% block app_content %}
+<div class="container mt-5">
+    <div class="jumbotron">
+        <div>
+            <h2 class="display-4">Weather in the city {{ name }}</h2>
+            <p class="lead">{{ weather }}</p>
+        </div>
+        <div>
+            <img src="https://openweathermap.org/img/wn/{{ icon }}@2x.png">{{ temperature }}°	
+            <br>
+            <p class='lead text-muted'>Wind {{ wind }} km/h</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
