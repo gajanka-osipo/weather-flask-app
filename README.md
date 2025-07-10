@@ -42,10 +42,10 @@ A simple Flask web app that shows the weather of your current city based on your
    pip install -r requirements.txt
 
 5. Create a `config.py` file in the root folder with the following content, and add your own API keys:
-
+   ```python
    import os
     
-   ```pythonclass Config(object):
+   class Config(object):
       OWM_TOKEN = 'YOUR_OPENWEATHERMAP_TOKEN'
       IPINFO_TOKEN = 'YOUR_IPINFO_TOKEN'
       SECRET_KEY = os.environ.get('SECRET_KEY') or 'any_key'```
