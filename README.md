@@ -51,10 +51,10 @@ A simple Flask web app that shows the weather of your current city based on your
       SECRET_KEY = os.environ.get('SECRET_KEY') or 'any_key'
    ```
 
-7. Run the Flask app:
+6. Run the Flask app:
 
    `python app.py`
 
-8. Open your browser and go to:
+7. Open your browser and go to:
 
    http://127.0.0.1:5000
