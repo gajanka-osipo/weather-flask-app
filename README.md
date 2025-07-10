@@ -46,14 +46,14 @@ A simple Flask web app that shows the weather of your current city based on your
    import os
     
    class Config(object):
-       OWM_TOKEN = 'YOUR_OPENWEATHERMAP_TOKEN'
-       IPINFO_TOKEN = 'YOUR_IPINFO_TOKEN'
-       SECRET_KEY = os.environ.get('SECRET_KEY') or 'any_key'
+      OWM_TOKEN = 'YOUR_OPENWEATHERMAP_TOKEN'
+      IPINFO_TOKEN = 'YOUR_IPINFO_TOKEN'
+      SECRET_KEY = os.environ.get('SECRET_KEY') or 'any_key'
 
-6. Run the Flask app:
+7. Run the Flask app:
 
    python app.py
 
-7. Open your browser and go to:
+8. Open your browser and go to:
 
    http://127.0.0.1:5000
