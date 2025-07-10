@@ -23,11 +23,11 @@ A simple Flask web app that shows the weather of your current city based on your
 
 1. Clone the repository:
 
-   git clone https://github.com/gajanka-osipo/weather-flask-app.git
+   `git clone https://github.com/gajanka-osipo/weather-flask-app.git`
 
 2. Change directory to the project folder:
 
-   cd weather-flask-app
+   `cd weather-flask-app`
 
 3. (Optional but recommended) Create and activate a virtual environment:
 
@@ -53,7 +53,7 @@ A simple Flask web app that shows the weather of your current city based on your
 
 7. Run the Flask app:
 
-   python app.py
+   `python app.py`
 
 8. Open your browser and go to:
 
