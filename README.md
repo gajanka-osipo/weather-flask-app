@@ -31,15 +31,15 @@ A simple Flask web app that shows the weather of your current city based on your
 
 3. (Optional but recommended) Create and activate a virtual environment:
 
-   python -m venv venv
-   # On Windows:
-   venv\Scripts\activate
-   # On macOS/Linux:
-   source venv/bin/activate
+   `python -m venv venv`
+   ## On Windows:
+   `venv\Scripts\activate`
+   ## On macOS/Linux:
+   `source venv/bin/activate`
 
 4. Install the required dependencies:
 
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
 
 5. Create a `config.py` file in the root folder with the following content, and add your own API keys:
    ```python
